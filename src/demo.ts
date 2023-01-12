@@ -1,8 +1,8 @@
 
 type scienists = {
     name: string;
-    age: number | string;
-    minions: number | string;
+    age: number;
+    minions: number; 
     desc: string;
 }
 
@@ -67,14 +67,14 @@ addBtn.addEventListener("click", function(e){
     e.preventDefault();
     
     let sciName = document.querySelector('#fname') as HTMLInputElement;
+    let sciDesc = document.querySelector('#description') as HTMLInputElement;
     let sciAge = document.querySelector('#age') as HTMLInputElement;
     let sciMinion = document.querySelector('#minions') as HTMLInputElement;
-    let sciDesc = document.querySelector('#description') as HTMLInputElement;
 
     let arr:scienists = {
         name: sciName.value,
-        age: sciAge.value,
-        minions: sciMinion.value,
+        age: parseFloat(sciAge.value),
+        minions: parseFloat(sciMinion.value),
         desc: sciDesc.value,
     }
     madScientists.push(arr);

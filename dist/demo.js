@@ -47,13 +47,13 @@ let printcard = function () {
 addBtn.addEventListener("click", function (e) {
     e.preventDefault();
     let sciName = document.querySelector('#fname');
+    let sciDesc = document.querySelector('#description');
     let sciAge = document.querySelector('#age');
     let sciMinion = document.querySelector('#minions');
-    let sciDesc = document.querySelector('#description');
     let arr = {
         name: sciName.value,
-        age: sciAge.value,
-        minions: sciMinion.value,
+        age: parseFloat(sciAge.value),
+        minions: parseFloat(sciMinion.value),
         desc: sciDesc.value,
     };
     madScientists.push(arr);

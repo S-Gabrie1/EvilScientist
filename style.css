@@ -3,28 +3,42 @@ body {
 }
 
 .wrapper{
-    display: flex;
-    flex-flow: row;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-flow: row; 
     justify-content: space-evenly;
     padding: 30px;
     background-color: #5c84a2;
     border-radius: 5px;
-    max-width: 100%;
+    min-height: 100%;
+    max-width: 95%;
 }
 
 .form-content{
-    
     background-color: #4ecdb6;
     margin-right: 20px;
+    border-radius: 5px;
+}
+
+#myform, #main-content, #boxing{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
 }
 
 #main-content {
     background-color: #4ecdb6;
     margin-right: 20px;
+    border-radius: 5px;
+    
 }
 
 .informationbox {
+    display: flex;
+    flex-flow: column;
     background-color: #4ecdb6;
+    border-radius: 5px;
 }
 
 h1 {
@@ -32,15 +46,25 @@ h1 {
     text-align: center;
 }
 
+#boxing {
+    background-color: #234547;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+}
 
-.card, #boxing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.card {
+    font-size: larger;
+    border: 2px solid white;
+    text-align: center;
+    min-width: 80%;
     margin: 15px;
     background: #234547;
     border-radius: 3px;
-    min-height: 50px;
+    padding: 20px;
     color: white;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -49,15 +73,14 @@ h1 {
 
 input[type=text],
 input[type=number] {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     width: 75%;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #234547;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     color: white;
-    margin-left: 10%;
     border: none;
     
 }
@@ -73,25 +96,36 @@ section {
 }
 
 button {
-    
-    display: flex;
+    width: 50%;
+    height: 40px;
     border: none;
-    justify-content: center;
-    align-content: center;
     background: #3271BA;
     border-radius: 31px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
+    color: white;
+    transition: 0.3s;
 }
 
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+
 .texted {
-    display: block;
     padding: none;
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
 }
 
+.descBtn {
+    margin-bottom: 20px;
+    min-width: 30%;
+    max-width: 40%;
+    font-size: large;
+}
 
 .form-content {
     display: felx;
@@ -99,7 +133,12 @@ button {
     justify-content: space-evenly;
 }
 
-#descTest {
-    display: block;
-    background-color: black;
+
+
+#addBtn {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin-bottom: 20px;
+    max-width: 20%;
+    min-width: 10%;
 }

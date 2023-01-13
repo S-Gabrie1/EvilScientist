@@ -23,7 +23,6 @@ const addBtn = document.querySelector('button');
 let sec1 = document.getElementById('main-content');
 let sec2 = document.getElementById('informationbox');
 let par1 = document.getElementById('descText');
-// --- Print out Scientists / Shows description on far right column ---
 let printcard = function () {
     let length = madScientists.length;
     for (let i = 0; i < length; i++) {
@@ -43,7 +42,6 @@ let printcard = function () {
         });
     }
 };
-//    ---- Add Scientists ----
 addBtn.addEventListener("click", function (e) {
     e.preventDefault();
     let sciName = document.querySelector('#fname');
